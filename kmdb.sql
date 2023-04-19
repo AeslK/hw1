@@ -167,13 +167,13 @@ INSERT INTO Movies (
     year_released,
     MPAA_rating,
     studio_id
-)
+) 
 VALUE (
     "Batman Begins",
     "2005",
     "PG-13",
     "1"
-);
+)
 
 INSERT INTO Movies (
     title,
@@ -186,7 +186,7 @@ VALUE (
     "2008",
     "PG-13",
     "1"
-);
+)
 
 INSERT INTO Movies (
     title,
@@ -199,41 +199,41 @@ VALUE (
     "2012",
     "PG-13",
     "1"
-);
+)
 
 INSERT INTO Studio (
     name
 )
 VALUE (
     "Warner Bros."
-);
+)
 
 INSERT INTO Actors (
     name
 )
 VALUE (
     "Christian Bale"
-);
+)
 
 INSERT INTO Actors (
     name
 )
 VALUE (
     "Michael Caine"
-);
+)
 
 INSERT INTO Actors (
     name
 )
 VALUE (
     "Liam Neeson"
-);
+)
 
 INSERT INTO Actors (
     name
 )
 VALUE (
     "Katie Holmes"
-);
+)
 
 
