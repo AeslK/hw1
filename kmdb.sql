@@ -130,3 +130,110 @@
 
 -- The SQL statement for the cast output
 -- TODO!
+
+
+DROP TABLE IF EXISTS Movies;
+DROP TABLE IF EXISTS Studio;
+DROP TABLE IF EXISTS Actors;
+DROP TABLE IF EXISTS Characters;
+
+CREATE TABLE Movies (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title TEXT,
+    year_released INTEGER,
+    MPAA_rating TEXT,
+    studio_id INTEGER
+);
+
+CREATE TABLE Studio (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT
+);
+
+CREATE TABLE Actors (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT
+);
+
+CREATE TABLE Characters (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    actor_id INTEGER,
+    movie_id INTEGER,
+    character_name TEXT
+);
+
+INSERT INTO Movies (
+    title,
+    year_released,
+    MPAA_rating,
+    studio_id
+)
+VALUE (
+    "Batman Begins",
+    "2005",
+    "PG-13",
+    "1"
+);
+
+INSERT INTO Movies (
+    title,
+    year_released,
+    MPAA_rating,
+    studio_id
+)
+VALUE (
+    "The Dark Knight",
+    "2008",
+    "PG-13",
+    "1"
+);
+
+INSERT INTO Movies (
+    title,
+    year_released,
+    MPAA_rating,
+    studio_id
+)
+VALUE (
+    "The Dark Knights Rises",
+    "2012",
+    "PG-13",
+    "1"
+);
+
+INSERT INTO Studio (
+    name
+)
+VALUE (
+    "Warner Bros."
+);
+
+INSERT INTO Actors (
+    name
+)
+VALUE (
+    "Christian Bale"
+);
+
+INSERT INTO Actors (
+    name
+)
+VALUE (
+    "Michael Caine"
+);
+
+INSERT INTO Actors (
+    name
+)
+VALUE (
+    "Liam Neeson"
+);
+
+INSERT INTO Actors (
+    name
+)
+VALUE (
+    "Katie Holmes"
+);
+
+
